@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+body, html {
+  margin: 0; padding: 0; height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* MENU */
+.letras {
+  opacity: 0;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
+
+.btn-menu {
+  background-color: white;
+  color: #0d6efd;
+  font-weight: 600;
+  font-size: 1.3rem;
+  padding: 12px 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(13, 110, 253, 0.3);
+  border: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.btn-menu:hover {
+  background-color: #0d6efd;
+  color: white;
+  box-shadow: 0 12px 20px rgba(13, 110, 253, 0.7);
+  transform: translateY(0) scale(1.05);
+}
+
+/* Jogo da Velha */
+.tabuleiro {
+  display: grid;
+  grid-template-columns: repeat(3, 90px);
+  grid-template-rows: repeat(3, 90px);
+  gap: 15px;
+  justify-content: center;
+}
+
+.celula {
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+.celula:hover {
+  background-color: #e2e6ea;
+}
+
+/* Tela de vitória: azul para X, vermelho para O */
+.vitoria-x {
+  background-color: #007bff !important;
+  color: white !important;
+  transition: background-color 0.8s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.vitoria-o {
+  background-color: #dc3545 !important;
+  color: white !important;
+  transition: background-color 0.8s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* QUIZ estilo kahoot */
+.quiz-container p {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.quiz-container button {
+  width: 100%;
+  margin: 8px 0;
+  padding: 15px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  transition: transform 0.3s ease;
+  user-select: none;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+/* Cores estilo kahoot */
+.quiz-container button:nth-child(2) { background-color: #00b894; }
+.quiz-container button:nth-child(3) { background-color: #0984e3; }
+.quiz-container button:nth-child(4) { background-color: #fd79a8; }
+.quiz-container button:nth-child(5) { background-color: #6c5ce7; }
+
+.quiz-container button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+/* ADIVINHE O NÚMERO */
+#palpite {
+  border-radius: 12px;
+  border: 2px solid #0d6efd;
+  transition: border-color 0.3s ease;
+}
+
+#palpite:focus {
+  outline: none;
+  border-color: #0a58ca;
+  box-shadow: 0 0 8px rgba(13,110,253,0.7);
+}
+
+#mensagemNumero {
+  color: #0d6efd;
+  text-align: center;
+  min-height: 50px;
+}
