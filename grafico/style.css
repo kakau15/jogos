@@ -1,0 +1,28 @@
+body {
+  background-color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+h2 {
+  color: #004080;
+}
+
+.chart-container {
+  width: 80%;
+  max-width: 700px;
+  background-color: #f9f9f9;
+  border: 2px solid #004080;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 64, 128, 0.1);
+}
+
+canvas {
+  background-color: white;
+}
