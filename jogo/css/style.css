@@ -1,0 +1,88 @@
+/* Fundo azul sólido */
+body {
+  margin: 0;
+  height: 100vh;
+  background: #0077b6;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Cabeçalho no topo */
+.game-header {
+  padding: 30px 0 10px;
+  color: #ffdd00;
+  font-family: 'Luckiest Guy', cursive;
+  text-shadow:
+    3px 3px 0 #000,
+    6px 6px 0 #ff6f00,
+    9px 9px 15px rgba(0,0,0,0.8);
+}
+
+.game-header h1 {
+  font-size: 5rem;
+  margin: 0;
+}
+
+/* Tela inicial */
+.start-screen {
+  flex-grow: 1;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  padding-bottom: 60px;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px #000;
+}
+
+/* Botão */
+.btn-start {
+  background-color: #ffdd00;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  border-radius: 12px;
+  padding: 15px 40px;
+  font-size: 1.5rem;
+  box-shadow: 0 5px 0 #b39c00;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-start:hover {
+  background-color: #ffc107;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+}
+
+/* Bola Mikasa estilizada */
+.volleyball {
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  width: 90px;
+  height: 90px;
+  margin-left: -45px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #fcd116 0% 25%,
+    #002868 25% 50%,
+    #fcd116 50% 75%,
+    #002868 75% 100%
+  );
+  box-shadow:
+    inset 0 0 15px #fff,
+    0 0 15px rgba(0,0,0,0.5);
+  z-index: 10;
+  transform-origin: center;
+}
